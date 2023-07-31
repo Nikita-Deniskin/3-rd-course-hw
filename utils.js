@@ -1,5 +1,4 @@
 import _ from "lodash";
-
 export const getCardsArray = (difficult) => {
   const cards = [
     "./assets/images/cards/6 бубны.png",

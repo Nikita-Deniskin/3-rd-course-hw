@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'MyFont', sans-serif;
+  font-family: "MyFont", sans-serif;
 }
 .container {
   width: 100vw;
@@ -31,11 +31,10 @@ body {
   justify-content: flex-start;
   flex-shrink: 0;
   border-radius: 12px;
-  background: #C2F5FF;
+  background: #c2f5ff;
   padding-top: 26px;
   margin-top: 158px;
 }
-
 
 .difficulty-title {
   color: #004980;
@@ -68,16 +67,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: #0080C1;
+  color: #0080c1;
   font-size: 64px;
   font-family: StratosSkyeng;
   border-radius: 12px;
-  background: #FFF;
+  background: #fff;
   border: none;
 }
 
 .level-button:hover {
-  border: 0.2px solid #44D2FF;
+  border: 0.2px solid #44d2ff;
 }
 
 input[type="radio"] {
@@ -88,18 +87,18 @@ input[type="radio"] {
 .restart {
   width: 246px;
   height: 48px;
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-family: StratosSkyeng;
   line-height: 32px;
   border-radius: 12px;
-  background: var(--salad-60, #7AC100);
+  background: var(--salad-60, #7ac100);
   border: none;
 }
 
 .start-button:hover {
   scale: 1.03;
-  border: 3px solid #44D2FF
+  border: 3px solid #44d2ff;
 }
 
 .play-field {
