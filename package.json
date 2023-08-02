@@ -11,7 +11,8 @@
     "prepare": "husky install",
     "lint": "npm run lint:js && npm run lint:css",
     "build": "SET NODE_ENV='production' && webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "lint:ts": "tsc --noEmit"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.196",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
@@ -30,6 +32,8 @@
     "prettier": "^3.0.0",
     "style-loader": "^3.3.3",
     "stylelint": "^15.10.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

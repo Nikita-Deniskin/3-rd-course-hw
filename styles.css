@@ -22,7 +22,8 @@ body {
   flex-flow: column wrap;
   background-color: #004980;
 }
-.difficulty_block {
+.difficulty_block,
+.finish-game {
   width: 480px;
   height: 459px;
   display: flex;
@@ -59,6 +60,15 @@ body {
   border: none;
 }
 
+label {
+  width: 108px;
+  height: 108px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .level-button {
   width: 98px;
   height: 98px;
@@ -83,6 +93,11 @@ input[type="radio"] {
   display: none;
 }
 
+input[type="radio"]:checked + .level-button {
+  scale: 1.15;
+  border: 3px solid #44d2ff;
+}
+
 .start-button,
 .restart {
   width: 246px;
@@ -99,6 +114,40 @@ input[type="radio"] {
 .start-button:hover {
   scale: 1.03;
   border: 3px solid #44d2ff;
+}
+
+.image {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+}
+
+.finish-game {
+  z-index: 1;
+}
+
+.win-title {
+  color: var(--blue-120, #004980);
+  font-size: 40px;
+  font-family: StratosSkyeng;
+  line-height: 48px;
+  width: 280px;
+  padding: 9px 0 28px;
+}
+
+.time-text {
+  color: #000;
+  font-size: 24px;
+  font-family: StratosSkyeng;
+  line-height: 32px;
+}
+
+.time-value {
+  color: #000;
+  font-size: 64px;
+  font-family: StratosSkyeng;
+  line-height: 72px;
+  padding: 10px 0 40px;
 }
 
 .play-field {
@@ -175,9 +224,18 @@ ul {
   height: 133px;
   background-image: url(".//assets/images/cards/рубашка.png");
   background-size: contain;
+  transition: all 0.2s linear;
   background-repeat: no-repeat;
+}
+
+.shirt.flip {
+  transform: perspective(100px) rotateY(180deg);
 }
 
 .hide {
   display: none;
+}
+
+.success {
+  box-sizing: border-box;
 }
