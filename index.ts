@@ -55,6 +55,9 @@ export function gameLogic(cards: string[]) {
                 if (appEl) {
                   let time = appEl.querySelector<HTMLElement>(".time");
                   if (time) renderCongratulation(appEl, time.innerText);
+                  firstCard = null;
+                  secondCard = null;
+                  clickable = true;
                 }
               }
               if (
